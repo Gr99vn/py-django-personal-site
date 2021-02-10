@@ -21,4 +21,4 @@ class Comment(models.Model):
   created_on = models.DateTimeField(auto_now_add=True)
   post = models.ForeignKey(to="Post", on_delete=models.CASCADE)
   def __str__(self):
-    return self.author + " - " + self.post 
+    return self.author + " - " + self.post.title
