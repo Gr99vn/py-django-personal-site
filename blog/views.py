@@ -1,5 +1,5 @@
 from blog.forms import CommentForm
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from blog.models import Post, Comment
 # Create your views here.
 
